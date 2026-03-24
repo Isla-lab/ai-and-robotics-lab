@@ -1,0 +1,10 @@
+# Ignora i file di compilazione di ROS2
+colcon_ws/build/
+colcon_ws/install/
+colcon_ws/log/
+
+# Ignora file temporanei di sistema e Python
+__pycache__/
+*.pyc
+.DS_Store
+.git/
