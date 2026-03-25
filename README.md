@@ -45,7 +45,24 @@ Once the installation is complete, **close your terminal and open a new one** to
    ```
 3. Once the CoppeliaSim window opens, click the **Play** button (▶) in the top toolbar to start the simulation.
 
----
+4. **Verify the connection:** Open a **new terminal** and list the active ROS2 topics to ensure the simulator is broadcasting data correctly:
+   ```bash
+   ros2 topic list
+   ```
+   You should see an output similar to this:
+   ```text
+   /camera/color/image_raw
+   /camera/depth/image_raw
+   /cmd_vel
+   /image
+   /odom
+   /parameter_events
+   /rosout
+   /scan
+   /simTime12710
+   /tf
+   ```
+   *(Note: the number after `simTime` will vary).*
 
 ## 4. How to add future Labs (e.g., Lab 2)
 As the course progresses, new labs will be released. You **do not** need to run the setup script again. Just follow these steps:
