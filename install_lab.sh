@@ -64,6 +64,8 @@ fi
 # Installiamo YOLO alla fine. Vedendo che PyTorch c'è già (CPU o GPU), non lo sovrascriverà.
 echo "Installazione di YOLO (Ultralytics)..."
 python3 -m pip install ultralytics
+python3 -m pip install "numpy<2"
+
 # 4. ROS2 Humble Setup
 echo -e "\n---> Configurazione Locale per ROS2..."
 sudo apt install -y locales
