@@ -1,0 +1,12 @@
+# Core Robotics & Simulation
+coppeliasim-zmqremoteapi-client
+cvxpy
+
+# Reinforcement Learning & Environments
+stable-baselines3[extra]
+shimmy>=2.0.0
+gymnasium
+
+# Specific versions to fix the NumPy 2.0 / Matplotlib conflict
+numpy>=2.0.0
+matplotlib>=3.9.0
